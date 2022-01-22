@@ -25,13 +25,13 @@ const config = {
 
         // Node build
         adapter: adapterNode({
-            out: './../build-node/'+Date.now()
+            // out: './../build-node/'+Date.now()
         }),
 
         vite: () => ({
             logLevel: "info",
             // plugins: [
-                // imagetools(),
+            // imagetools(),
             // ]
         })
     }

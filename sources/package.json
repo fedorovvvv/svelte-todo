@@ -1,0 +1,41 @@
+{
+    "name": "lh-svelte",
+    "version": "0.0.1",
+    "scripts": {
+        "gulp-build": "gulp build",
+        "gulp-watch": "gulp watcher",
+        "watch-dev": "run-p gulp-watch dev",
+        "gulp-dev": "run-s gulp-build watch-dev",
+        "dev": "svelte-kit dev",
+        "build": "svelte-kit build",
+        "preview": "svelte-kit preview"
+    },
+    "type": "module",
+    "devDependencies": {
+        "@sveltejs/adapter-node": "^1.0.0-next.55",
+        "@sveltejs/adapter-static": "^1.0.0-next.21",
+        "@sveltejs/kit": "next",
+        "gulp": "^4.0.2",
+        "gulp-clean": "^0.4.0",
+        "gulp-debug": "^4.0.0",
+        "gulp-favicons": "^3.0.0",
+        "gulp-imagemin": "^8.0.0",
+        "gulp-newer": "^1.4.0",
+        "gulp-svg-sprite": "^1.5.0",
+        "gulp-webp": "^4.0.1",
+        "imagemin-jpeg-recompress": "^7.0.0",
+        "imagemin-pngquant": "^9.0.2",
+        "npm-run-all": "^4.1.5",
+        "postcss": "^8.4.4",
+        "pug": "^3.0.2",
+        "sass": "^1.44.0",
+        "svelte": "^3.44.2",
+        "svelte-preprocess": "^4.9.8",
+        "vite-imagetools": "^3.9.0"
+    },
+    "dependencies": {
+        "@fontsource/fira-mono": "^4.5.0",
+        "@lukeed/uuid": "^2.0.0",
+        "cookie": "^0.4.1"
+    }
+}

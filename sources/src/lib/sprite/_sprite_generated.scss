@@ -1,0 +1,69 @@
+@use 'sass:math';
+
+%svg-common {
+	background: url("/images/sprites/main.svg") no-repeat;
+}
+
+.svg-image-del {
+	@extend %svg-common;
+	background-position: 0 0;
+	background-size: math.div(26, 13)*100% auto;
+	width: 13px;
+
+}
+@mixin svg-pos-image-del {
+	background-position: 0 0;
+}
+@mixin svg-image-del-hover {
+	.svg-image-del {
+		@include svg-pos-image-del-hover
+	}
+}
+
+.svg-image-del:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(13, 13)*100%;
+}
+
+.svg-image-del-dims {
+	width: 13px;
+	height: 13px;
+}
+
+.svg-image-pen {
+	@extend %svg-common;
+	background-position: 100% 0;
+	background-size: math.div(26, 13)*100% auto;
+	width: 13px;
+
+}
+@mixin svg-pos-image-pen {
+	background-position: 100% 0;
+}
+@mixin svg-image-pen-hover {
+	.svg-image-pen {
+		@include svg-pos-image-pen-hover
+	}
+}
+
+.svg-image-pen:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(13, 13)*100%;
+}
+
+.svg-image-pen-dims {
+	width: 13px;
+	height: 13px;
+}
+
+
+.image-by-height { width:auto; }
+.image-by-height:before { content:none; }
+.image-by-height > svg { height: inherit; }
+.image-by-height > img { height: inherit !important; vertical-align: top !important; margin: 0 !important; padding: 0 !important; max-width: none !important; max-height: none !important; border: 0 !important; opacity: 0 !important; }

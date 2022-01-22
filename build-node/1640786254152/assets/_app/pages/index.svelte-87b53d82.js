@@ -1,1 +1,0 @@
-import{S as a,i as n,s as o,J as c,d,E as e}from"../chunks/vendor-16222881.js";function r(s){return{c(){this.h()},l(t){c('[data-svelte="svelte-fcnrla"]',document.head).forEach(d),this.h()},h(){document.title="Main"},m:e,p:e,i:e,o:e,d:e}}class u extends a{constructor(t){super();n(this,t,null,r,o,{})}}export{u as default};

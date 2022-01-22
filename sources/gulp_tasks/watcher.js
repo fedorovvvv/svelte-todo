@@ -14,7 +14,7 @@ gulp.task("watcher", () =>
     new Promise((res, rej) => {
         gulp.watch(["./src/images/**/*", "!./src/images/sprite-*/**/*", "!./src/images/favicons/**/*"], gulp.series("images"));
         gulp.watch("./src/images/sprite-svg/*.svg", gulp.series("sprite"));
-        gulp.watch("./src/**/*.svelte", { delay: 1000 }, build);
+        // gulp.watch("./src/**/*.svelte", { delay: 1000 }, build);
         res();
     })
 );

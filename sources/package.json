@@ -12,8 +12,8 @@
     },
     "type": "module",
     "devDependencies": {
-        "@sveltejs/adapter-node": "^1.0.0-next.55",
-        "@sveltejs/adapter-static": "^1.0.0-next.21",
+        "@sveltejs/adapter-node": "^1.0.0-next.66",
+        "@sveltejs/adapter-static": "^1.0.0-next.26",
         "@sveltejs/kit": "next",
         "gulp": "^4.0.2",
         "gulp-clean": "^0.4.0",
@@ -26,11 +26,11 @@
         "imagemin-jpeg-recompress": "^7.0.0",
         "imagemin-pngquant": "^9.0.2",
         "npm-run-all": "^4.1.5",
-        "postcss": "^8.4.4",
+        "postcss": "^8.4.5",
         "pug": "^3.0.2",
-        "sass": "^1.44.0",
-        "svelte": "^3.44.2",
-        "svelte-preprocess": "^4.9.8",
+        "sass": "^1.49.0",
+        "svelte": "^3.46.2",
+        "svelte-preprocess": "^4.10.2",
         "vite-imagetools": "^3.9.0"
     },
     "dependencies": {

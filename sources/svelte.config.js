@@ -25,21 +25,14 @@ const config = {
 
         // Node build
         adapter: adapterNode({
-            out: './../build-node/'+Date.now(),
-            esbuild(defaultOptions) {
-                return {
-                    ...defaultOptions,
-                    // outfile: './../build-node-serve/index.mjs',
-                    // external: [],
-                };
-            }
+            out: './../build-node/'+Date.now()
         }),
 
         vite: () => ({
             logLevel: "info",
-            plugins: [
+            // plugins: [
                 // imagetools(),
-            ]
+            // ]
         })
     }
 };

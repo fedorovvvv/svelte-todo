@@ -130,7 +130,7 @@
         textareaEl.rows = 1
         const paddingTopBottom = parseFloat(getStyle(textareaEl, 'padding-top')) + parseFloat(getStyle(textareaEl, 'padding-bottom'))
         const height = textareaEl.scrollHeight - paddingTopBottom
-        const lineHeight = parseFloat(getStyle(textareaEl, 'line-height'))
+        let lineHeight = parseFloat(getStyle(textareaEl, 'line-height'))
 
         lineHeight === 'normal' && (lineHeight = parseFloat(getStyle(textareaEl, 'font-size')))
         textareaEl.rows = height / lineHeight

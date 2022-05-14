@@ -1,4 +1,4 @@
-# LH-Svelte Project
+# LH-Svelte Project //learn project
 
 # Тут будет документация со всяким
 ## Горячие клавиши
